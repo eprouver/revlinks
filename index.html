@@ -118,9 +118,13 @@
     }
     line.remove {
         -webkit-animation: remove 0.75s linear forwards;
+		-moz-animation: remove 0.75s linear forwards;
+		animation: remove 0.75s linear forwards;
     }
     line.drawing {
         -webkit-animation: dash 0.25s linear;
+		-moz-animation: dash 0.25s linear;
+		animation: dash 0.25s linear;
     }
     .me {
     fill: rgba(255,255,255,0.5);
@@ -151,8 +155,35 @@
             -webkit-transform: rotateY(360deg);
         }
     }
+    @-moz-keyframes remove {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0.5;
+        }
+    }
+    @-moz-keyframes dash {
+        from {
+            stroke-dashoffset: 90;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    @-moz-keyframes spin {
+        from {
+            -moz-transform: rotateY(0deg);
+        }
+        to {
+            -moz-transform: rotateY(360deg);
+        }
+    }
+
     .rotate {
         -webkit-animation: 17s spin linear infinite;
+		-moz-animation: 17s spin linear infinite;
+		animation: 17s spin linear infinite;
 		pointer-events:none;
     }
     .hud {
@@ -343,7 +374,7 @@
 	}
 	
 	.md_input{
-    width: 100%;
+    width: 10vw;
     text-align: center;
     font-size: 2em;
 	-webkit-user-select: text;      
