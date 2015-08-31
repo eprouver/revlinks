@@ -346,7 +346,22 @@
     text-align: center;
     font-size: 1.8vmin;
     border: 5px solid rgba(12,12,12,0.5);
+	overflow:hidden;
     }
+	
+	.md_content:before{
+	content: '';
+    border: 5px solid #FF4136;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -30px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -30px;
+    background-color: rgba(255, 65, 54, 0.67);
+	}
 	
 	.por .md_content{
     font-size: 2vmin;
@@ -357,6 +372,7 @@
     font-size: 2em;
     text-align: center;
     padding: 1.55em;
+	color: #585858;
     }
     #md_options {
         padding-bottom: 2em;
@@ -366,6 +382,7 @@
         font-size: 3em;
         display: inline-block;
 		color:white;
+		padding: 0.1em 0;
     }
     #md_options button.go {
         background-color: #2ECC40;
@@ -408,7 +425,7 @@
 	}
 	
 	.p-select.off:after{
-    content: '✘';
+    content: 'X';
     position: absolute;
     font-size: 9em;
     top: 0.4em;
@@ -455,6 +472,7 @@
 	#logo{
 		width: 100vw;
 		background-color: rgb(232, 232, 232);
+		pointer-events:auto;
 	}
 	
 	#logo .drawing{
@@ -568,7 +586,7 @@
 	</div>
   </div>
   
-<svg xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 1400 800"><circle xmlns="http://www.w3.org/2000/svg" class="style0"  cx="1250" cy="50" r="25" /><line class="front logo" y2="150" y1="50" x2="50" x1="50"/><line class="front logo" y2="250" y1="150" x2="50" x1="50"/><line class="front logo" y2="50" y1="50" x2="150" x1="50"/><line class="front logo" y2="150" y1="50" x2="150" x1="150"/><line class="front logo" y2="150" y1="150" x2="50" x1="150"/><line class="front logo" y2="50" y1="50" x2="250" x1="150"/><line class="front logo" y2="150" y1="50" x2="250" x1="250"/><line class="front logo" y2="150" y1="150" x2="150" x1="250"/><line class="front logo" y2="250" y1="150" x2="250" x1="250"/><line class="front logo" y2="350" y1="250" x2="50" x1="50"/><line class="front logo" y2="450" y1="350" x2="50" x1="50"/><line class="front logo" y2="450" y1="350" x2="350" x1="350"/><line class="front logo" y2="450" y1="450" x2="450" x1="350"/><line class="front logo" y2="350" y1="250" x2="450" x1="450"/><line class="front logo" y2="350" y1="350" x2="350" x1="450"/><line class="front logo" y2="250" y1="150" x2="550" x1="550"/><line class="front logo" y2="350" y1="250" x2="550" x1="550"/><line class="front logo" y2="450" y1="350" x2="550" x1="550"/><line class="front logo" y2="150" y1="150" x2="650" x1="750"/><line class="front logo" y2="150" y1="50" x2="550" x1="550"/><line class="front logo" y2="250" y1="150" x2="650" x1="650"/><line class="front logo" y2="450" y1="350" x2="650" x1="650"/><line class="front logo" y2="450" y1="350" x2="750" x1="750"/><line class="front logo" y2="250" y1="250" x2="950" x1="850"/><line class="front logo" y2="350" y1="250" x2="950" x1="950"/><line class="front logo" y2="450" y1="350" x2="950" x1="950"/><line class="front logo" y2="250" y1="150" x2="1050" x1="1050"/><line class="front logo" y2="350" y1="250" x2="1050" x1="1050"/><line class="front logo" y2="450" y1="350" x2="1050" x1="1050"/><line class="front logo" y2="250" y1="250" x2="1150" x1="1050"/><line class="front logo" y2="150" y1="250" x2="1150" x1="1150"/><line class="front logo" y2="150" y1="150" x2="1250" x1="1150"/><line class="front logo" y2="350" y1="250" x2="1150" x1="1150"/><line class="front logo" y2="350" y1="350" x2="1250" x1="1150"/><line class="front logo" y2="450" y1="350" x2="1250" x1="1250"/><line class="front logo" y2="450" y1="450" x2="1350" x1="1250"/><line class="front logo" y2="350" y1="350" x2="250" x1="150"/><line class="front logo" y2="450" y1="350" x2="250" x1="250"/><line class="front logo" y2="250" y1="250" x2="150" x1="50"/><line class="front logo" y2="250" y1="150" x2="150" x1="150"/><line class="front logo" y2="350" y1="250" x2="150" x1="150"/><line class="front logo" y2="250" y1="250" x2="250" x1="150"/><line class="front logo" y2="250" y1="350" x2="350" x1="350"/><line class="front logo" y2="250" y1="250" x2="450" x1="350"/><line class="front logo" y2="250" y1="250" x2="750" x1="650"/><line class="front logo" y2="150" y1="250" x2="750" x1="750"/><line class="front logo" y2="350" y1="350" x2="850" x1="750"/><line class="front logo" y2="250" y1="350" x2="850" x1="850"/><line class="front logo" y2="50" y1="150" x2="1050" x1="1050"/><line class="front logo" y2="50" y1="150" x2="1250" x1="1250"/><rect class="style2" height="100" width="100" y="50" x="50"/><rect class="style2" height="100" width="100" y="50" x="150"/><rect class="style2" height="100" width="100" y="150" x="50"/><rect class="style2" height="100" width="100" y="150" x="150"/><rect class="style2" height="100" width="100" y="250" x="350"/><rect class="style2" height="100" width="100" y="150" x="650"/></svg>
+<svg onclick="this.remove(); clearTimeout(timeout)" xmlns="http://www.w3.org/2000/svg" id="logo" viewbox="0 0 1400 800"><circle xmlns="http://www.w3.org/2000/svg" class="style0"  cx="1250" cy="50" r="25" /><line class="front logo" y2="150" y1="50" x2="50" x1="50"/><line class="front logo" y2="250" y1="150" x2="50" x1="50"/><line class="front logo" y2="50" y1="50" x2="150" x1="50"/><line class="front logo" y2="150" y1="50" x2="150" x1="150"/><line class="front logo" y2="150" y1="150" x2="50" x1="150"/><line class="front logo" y2="50" y1="50" x2="250" x1="150"/><line class="front logo" y2="150" y1="50" x2="250" x1="250"/><line class="front logo" y2="150" y1="150" x2="150" x1="250"/><line class="front logo" y2="250" y1="150" x2="250" x1="250"/><line class="front logo" y2="350" y1="250" x2="50" x1="50"/><line class="front logo" y2="450" y1="350" x2="50" x1="50"/><line class="front logo" y2="450" y1="350" x2="350" x1="350"/><line class="front logo" y2="450" y1="450" x2="450" x1="350"/><line class="front logo" y2="350" y1="250" x2="450" x1="450"/><line class="front logo" y2="350" y1="350" x2="350" x1="450"/><line class="front logo" y2="250" y1="150" x2="550" x1="550"/><line class="front logo" y2="350" y1="250" x2="550" x1="550"/><line class="front logo" y2="450" y1="350" x2="550" x1="550"/><line class="front logo" y2="150" y1="150" x2="650" x1="750"/><line class="front logo" y2="150" y1="50" x2="550" x1="550"/><line class="front logo" y2="250" y1="150" x2="650" x1="650"/><line class="front logo" y2="450" y1="350" x2="650" x1="650"/><line class="front logo" y2="450" y1="350" x2="750" x1="750"/><line class="front logo" y2="250" y1="250" x2="950" x1="850"/><line class="front logo" y2="350" y1="250" x2="950" x1="950"/><line class="front logo" y2="450" y1="350" x2="950" x1="950"/><line class="front logo" y2="250" y1="150" x2="1050" x1="1050"/><line class="front logo" y2="350" y1="250" x2="1050" x1="1050"/><line class="front logo" y2="450" y1="350" x2="1050" x1="1050"/><line class="front logo" y2="250" y1="250" x2="1150" x1="1050"/><line class="front logo" y2="150" y1="250" x2="1150" x1="1150"/><line class="front logo" y2="150" y1="150" x2="1250" x1="1150"/><line class="front logo" y2="350" y1="250" x2="1150" x1="1150"/><line class="front logo" y2="350" y1="350" x2="1250" x1="1150"/><line class="front logo" y2="450" y1="350" x2="1250" x1="1250"/><line class="front logo" y2="450" y1="450" x2="1350" x1="1250"/><line class="front logo" y2="350" y1="350" x2="250" x1="150"/><line class="front logo" y2="450" y1="350" x2="250" x1="250"/><line class="front logo" y2="250" y1="250" x2="150" x1="50"/><line class="front logo" y2="250" y1="150" x2="150" x1="150"/><line class="front logo" y2="350" y1="250" x2="150" x1="150"/><line class="front logo" y2="250" y1="250" x2="250" x1="150"/><line class="front logo" y2="250" y1="350" x2="350" x1="350"/><line class="front logo" y2="250" y1="250" x2="450" x1="350"/><line class="front logo" y2="250" y1="250" x2="750" x1="650"/><line class="front logo" y2="150" y1="250" x2="750" x1="750"/><line class="front logo" y2="350" y1="350" x2="850" x1="750"/><line class="front logo" y2="250" y1="350" x2="850" x1="850"/><line class="front logo" y2="50" y1="150" x2="1050" x1="1050"/><line class="front logo" y2="50" y1="150" x2="1250" x1="1250"/><rect class="style2" height="100" width="100" y="50" x="50"/><rect class="style2" height="100" width="100" y="50" x="150"/><rect class="style2" height="100" width="100" y="150" x="50"/><rect class="style2" height="100" width="100" y="150" x="150"/><rect class="style2" height="100" width="100" y="250" x="350"/><rect class="style2" height="100" width="100" y="150" x="650"/></svg>
 </body>
 <script>
 document.ontouchmove = function(event){
@@ -639,13 +657,13 @@ function SfxrParams(){this.setSettings=function(r){for(var a=0;24>a;a++)this[Str
 	v.style.display = 'block';
  });
 
- setTimeout(function(){
+ timeout = setTimeout(function(){
  	sound.play('flip');
 	toArray(document.getElementsByClassName('style2')).forEach(function(v){
 		v.style.display = 'block';
 	});
 	
-	 setTimeout(function(){
+	 timeout = setTimeout(function(){
  	logo.remove();
  }, 2400);
  }, 2000);
@@ -767,13 +785,13 @@ function SfxrParams(){this.setSettings=function(r){for(var a=0;24>a;a++)this[Str
 
       },
       stages: [{
-        pre: 'Connect the circles to make a square.<br>Select one...<br>then a neighbor to draw a link.',
+        pre: 'Connect the circles to make a square.<br>Select one...<br>then a horizontal or vertical neighbor to draw a link.',
         post: 'Got it?',
         size: 2,
         players: 1
       }, {
-        pre: 'Cross the reverse-links.<br>Make two links far away.<br>See how they\'re linked from behind?<br>(Press \'Flip\' to reverse the board).<br>Crossed reverse-links are removed periodically and before winning.',
-        post: 'Press NEXT if you saw the reverse-links and how they\'re removed?',
+        pre: 'Cross the reverse-links.<br>Make two links far away.<br>See how they\'re linked from behind?<br>(Press \'Flip\' to see the reverse side of the board).<br>Crossed reverse-links are removed periodically and before anyone wins.',
+        post: 'Press NEXT if you saw the reverse-links and how they\'re removed.',
         size: 3,
         players: 1
       }, {
