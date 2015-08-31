@@ -82,7 +82,7 @@
     }
 
     .terr {
-      opacity: 0.5;
+      opacity: 0.65;
     }
 
     .square {
@@ -91,6 +91,10 @@
       -webkit-flex: 1;
       flex-grow: 1;
       position: relative;
+    }
+
+    .square[disabled=disabled]{
+      opacity: 0.5;
     }
 
     .square[disabled=disabled]:before {
@@ -343,7 +347,7 @@
     }
 
     .por .user {
-      width: 17.8vw;
+      width: 17.6vw;
       float: left;
       height: 18vh;
       border-left: 1px solid white;
@@ -390,11 +394,11 @@
 
     .user h1:before {
       content: 'points:';
-      font-size: 0.2em;
+      font-size: 0.25em;
       position: relative;
       top: -0.25em;
       font-weight: normal;
-      letter-spacing: -2px;
+      letter-spacing: -0.1em;
       color: #111;
     }
 
