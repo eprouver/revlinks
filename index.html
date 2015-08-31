@@ -797,6 +797,8 @@
   resizer();
   window.addEventListener('resize', resizer);
 
+  //Sound Library:
+  //https://github.com/mneubrand/jsfxr
   function SfxrParams() {
     this.setSettings = function(r) {
       for (var a = 0; 24 > a; a++) this[String.fromCharCode(97 + a)] = r[a] || 0;
@@ -1146,6 +1148,7 @@
       return {
         turn: 0,
         nextPlayer: function() {
+          //Move to the next player (if it's not a human, play a turn)
           gameState.currentPlayer++;
           board.drawFront();
 
@@ -1304,6 +1307,7 @@
         return false;
       };
 
+      //Check to see if two line segments cross
       function lineIntersect(x1, y1, x2, y2, x3, y3, x4, y4) {
         var x = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
         var y = ((x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
@@ -1595,6 +1599,7 @@
       }
     })();
 
+    //Object for the drawing of the board
     var board = (function() {
       var back = document.getElementById('back'),
         svg = document.getElementById('board'),
@@ -1704,6 +1709,7 @@
       }
     })();
 
+    //Circle inputs (actually square divs with a circle in a pseudo element)
     var inputs = (function() {
       var holder = document.getElementById('holder');
       var callAll = function(hfunc, wfunc, args) {
